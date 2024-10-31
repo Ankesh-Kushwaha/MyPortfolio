@@ -1,0 +1,85 @@
+.Main{
+    overflow: hidden;
+      width: 100vw;
+      max-width: 65rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+}
+
+.projects{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   max-width: 75rem;
+}
+
+.project img{
+   height:12rem;
+   width:18rem;
+   object-fit: cover;
+   
+}
+
+.heading h2{
+    font-weight: 600;
+    font-family: poppins,sans-serif;
+   font-size: 3rem;
+   margin: 0.75rem auto;
+}
+
+.heading p{
+   font-family:poppins;
+   font-weight: 300;
+   margin: 0rem auto;
+}
+
+.project{
+    background: rgb(50, 50, 50);
+    margin:1rem;
+    height:25rem;
+    border-radius: 1rem;
+}
+
+.project h3{
+    font-weight:600;
+    font-size: medium;
+    font-family: poppins,sans-serif;
+    margin: 1rem auto;
+    border-bottom:2px solid white;
+}
+
+.project p{
+  font-size:0.75rem;
+  margin:1rem auto;
+  font-weight: 200;
+}
+
+.project button{
+    background: white;
+    height:2rem;
+    width:7rem;
+    margin-bottom:0.5rem;
+    border:none;
+    border-radius:2rem;
+    color:rgb(19, 19, 22);
+    cursor:Pointer;
+}
+
+.project button:hover{
+      color:rgb(120, 111, 237);
+}
+
+
+@media screen and(max-width:800px) {
+    .projects{
+            flex-direction: column;
+            flex-wrap:wrap;
+            align-items: center;
+            justify-content: center;
+    }
+}
